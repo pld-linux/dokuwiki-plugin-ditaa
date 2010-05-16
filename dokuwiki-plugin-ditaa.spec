@@ -11,6 +11,7 @@ Source0:	http://download.github.com/splitbrain-dokuwiki-plugin-ditaa-596e8bd.zip
 # Source0-md5:	07e29cd1987d6fd4808eb1e21145a23b
 URL:		http://wiki.splitbrain.org/plugin:ditaa
 BuildRequires:	rpmbuild(macros) >= 1.520
+BuildRequires:	unzip
 Requires:	dokuwiki >= 20091225
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
