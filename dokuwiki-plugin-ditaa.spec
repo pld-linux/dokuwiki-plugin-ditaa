@@ -3,12 +3,12 @@
 %define		plugin		ditaa
 Summary:	Converts ASCII-Flowcharts to png-Graphics using ditaa
 Name:		dokuwiki-plugin-%{plugin}
-Version:	20100409
-Release:	0.1
+Version:	20100829
+Release:	1
 License:	GPL v2
 Group:		Applications/WWW
-Source0:	http://download.github.com/splitbrain-dokuwiki-plugin-ditaa-596e8bd.zip
-# Source0-md5:	07e29cd1987d6fd4808eb1e21145a23b
+Source0:	http://github.com/splitbrain/%{name}/tarball/master#/%{plugin}.zip
+# Source0-md5:	34c9823290bee81ecb8694b302000401
 URL:		http://wiki.splitbrain.org/plugin:ditaa
 BuildRequires:	rpmbuild(macros) >= 1.520
 BuildRequires:	unzip
@@ -68,6 +68,7 @@ fi
 %{plugindir}/conf
 %{plugindir}/*.txt
 %{plugindir}/*.php
+%{plugindir}/broken.png
 
 # TODO: system pkg
 %dir %{plugindir}/ditaa
